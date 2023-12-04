@@ -1,18 +1,24 @@
 * {
     box-sizing: border-box;
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
 }
 
 .container {
     max-width: 1280px;
-    margin: 0 auto;
+
 }
 
-main {
+
+
+.flex {
     display: flex;
-
 }
+
 
 /*SIDE-BAR*/
 .content-sidebar {
@@ -23,6 +29,9 @@ main {
     background-color: black;
     color: white;
     padding: 10px;
+
+
+
 }
 
 .sidebar-top {
@@ -50,13 +59,54 @@ main {
 }
 
 
+/*MAIN HEADER*/
+.content-head {
+    position: sticky;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    background-color: rgb(8, 11, 18);
+    height: 80px;
+    color: white;
+    position: relative;
+}
 
-/*content main*/
+.upgrade-btn {
+    color: white;
+    padding: 10px 20px;
+    border: 1px solid white;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    translate: 0 -50%;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+/*MAIN BODY*/
 .content-body {
-    background-color: blue;
+    background-color: #141922;
     overflow-y: scroll;
     height: 800px;
+    color: #7B7E82;
+    padding: 20px;
+
 }
+
+.content-body ul {
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+
+}
+
+.content-body-li {
+    font-size: 10px;
+}
+
 
 .content-body::-webkit-scrollbar {
     background-color: white;
@@ -68,15 +118,7 @@ main {
     background-color: black;
 }
 
-.content-head {
-    position: sticky;
-    top: 0px;
-    right: 0px;
-    left: 0px;
-    background-color: fuchsia;
-    text-align: right;
 
-}
 
 /*FOOTER*/
 footer {
