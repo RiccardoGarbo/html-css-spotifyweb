@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
     padding: 0;
-    margin: 0 auto;
+    margin: 0;
 }
 
 body {
@@ -12,9 +12,10 @@ body {
     max-width: 1480px;
     margin: 0 auto;
 
+
 }
 
-img {
+.card img {
     max-width: 100%;
     display: block;
     margin-bottom: 10px;
@@ -22,7 +23,7 @@ img {
 
 main {
     display: flex;
-    flex-basis: 100%;
+
 }
 
 
@@ -35,7 +36,7 @@ main {
     background-color: black;
     color: white;
     padding: 10px;
-    flex-basis: 10%;
+    flex-basis: 80px;
 
 }
 
@@ -43,6 +44,7 @@ main {
     line-height: 35px;
     font-size: 1.4rem;
     text-align: center;
+    width: 30px;
 }
 
 .sidebar-bot {
@@ -63,31 +65,32 @@ main {
     font-size: 1.5rem;
 }
 
-
-/*MAIN HEADER*/
+/*MAIN*/
 .big-content {
-    flex-basis: 90%;
+    height: calc(100vh - 100px);
+    overflow: auto;
+    flex-grow: 1;
 }
 
+
+/*MAIN HEADER*/
 .content-head {
     position: sticky;
     top: 0px;
     right: 0px;
     left: 0px;
     background-color: rgb(8, 11, 18);
-    height: 80px;
+    height: 100px;
     color: white;
-    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .upgrade-btn {
     color: white;
     padding: 10px 20px;
     border: 1px solid white;
-    position: absolute;
-    right: 0;
-    top: 50%;
-    translate: 0 -50%;
     border-radius: 20px;
     font-size: 12px;
     margin-right: 10px;
@@ -96,8 +99,6 @@ main {
 /*MAIN BODY*/
 .content-body {
     background-color: #141922;
-    overflow-y: scroll;
-    height: 800px;
     padding: 20px;
     color: white;
 
@@ -119,15 +120,6 @@ main {
 }
 
 
-.content-body::-webkit-scrollbar {
-    background-color: white;
-    width: 12px;
-
-}
-
-.content-body::-webkit-scrollbar-thumb {
-    background-color: rgb(128, 128, 128);
-}
 
 .row {
     display: flex;
@@ -152,10 +144,105 @@ h6 {
 
 /*FOOTER*/
 footer {
-    background: green;
+    background-color: #282828;
     position: sticky;
     bottom: 0px;
     left: 0px;
     right: 0px;
+    height: 100px;
+    display: flex;
+    color: white;
+    padding: 10px;
 
+}
+
+.footer-song {
+    display: flex;
+    align-items: center;
+    flex-basis: 30%;
+    gap: 10px;
+}
+
+.footer-song ul {
+    list-style-type: none;
+}
+
+.footer-song img {
+    height: 30px;
+    width: 30px;
+}
+
+.footer-control-panel {
+    flex-basis: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.footer-control-panel ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    gap: 20px;
+    align-items: center;
+}
+
+.fa-circle-play {
+    font-size: 2rem;
+}
+
+.progress-bar {
+    width: 120px;
+    height: 5px;
+    background-color: #5A5A5A;
+    border-radius: 20px;
+}
+
+.progress {
+    width: 15%;
+    height: 100%;
+    background-color: #C1C1C1;
+    border-radius: 20px;
+
+}
+
+.control-panel-bot {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 10px;
+
+}
+
+.footer-volume {
+    flex-basis: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+
+.footer-volume ul {
+    display: flex;
+    list-style-type: none;
+    gap: 5px;
+    align-items: center;
+
+}
+
+.progress-bar2 {
+    width: 80px;
+    height: 5px;
+    background-color: #5A5A5A;
+    border-radius: 20px;
+}
+
+.progress2 {
+    width: 15%;
+    height: 100%;
+    background-color: #C1C1C1;
+    border-radius: 20px;
 }
