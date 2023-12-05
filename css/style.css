@@ -23,37 +23,66 @@ body {
 
 main {
     display: flex;
+    flex-basis: 100%;
 
 }
 
 
 /*SIDE-BAR*/
-.content-sidebar {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: center;
+.sidebar {
     background-color: black;
-    color: white;
     padding: 10px;
-    flex-basis: 80px;
+    flex-basis: 50px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 10px;
+    color: white;
 
 }
 
-.sidebar-top {
-    line-height: 35px;
-    font-size: 1.4rem;
-    text-align: center;
+.sidebar h6 {
+    display: none;
+    font-size: 14px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+}
+
+.sidebar li {
+    margin: 5px 0;
+}
+
+.sidebar img {
     width: 30px;
 }
 
-.sidebar-bot {
-    line-height: 30px;
-    text-align: center;
+.spotify span {
+    display: none;
 }
 
-.content-sidebar ul {
-    list-style-type: none;
+.playlist {
+    margin-top: 15px;
+    display: none;
+
+}
+
+.playlist li {
+    margin-bottom: 15px;
+}
+
+.add-playlist {
+    display: flex;
+    align-items: center;
+    font-size: 3rem;
+    gap: 10px;
+    color: #7B7E82;
+}
+
+.sidebar-bot h6 {
+    display: none;
 }
 
 .fa-circle-down {
@@ -65,11 +94,21 @@ main {
     font-size: 1.5rem;
 }
 
+.sidebar-bot li {
+    color: white;
+}
+
+.user-profile h5 {
+    display: none;
+}
+
+
 /*MAIN*/
 .big-content {
     height: calc(100vh - 100px);
     overflow: auto;
     flex-grow: 1;
+    background-color: #141922;
 }
 
 
@@ -79,7 +118,7 @@ main {
     top: 0px;
     right: 0px;
     left: 0px;
-    background-color: rgb(8, 11, 18);
+    background-color: rgb(0, 0, 0, 0.5);
     height: 100px;
     color: white;
     display: flex;
@@ -245,4 +284,65 @@ footer {
     height: 100%;
     background-color: #C1C1C1;
     border-radius: 20px;
+}
+
+
+
+
+@media screen and (min-width:650px) {
+    .sidebar {
+        flex-basis: 225px;
+        padding: 20px 20px;
+        padding-bottom: 0;
+    }
+
+    .spotify img {
+        width: 40px;
+    }
+
+    .spotify span {
+        display: inline;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: white;
+    }
+
+    .spotify,
+    .home,
+    .search,
+    .bookshelf {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .sidebar-bot li {
+        text-align: left;
+    }
+
+    .sidebar h6 {
+        display: inline;
+    }
+
+    .playlist {
+        display: block;
+    }
+
+    .download {
+        display: flex;
+        gap: 20px;
+        text-align: center;
+        border-bottom: 1px solid #7D7F84;
+    }
+
+    .user-profile {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .user-profile h5 {
+        display: block;
+    }
 }
