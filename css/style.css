@@ -27,6 +27,10 @@ main {
 
 }
 
+a {
+    text-decoration: none;
+}
+
 
 /*SIDE-BAR*/
 .sidebar {
@@ -39,6 +43,12 @@ main {
     justify-content: space-between;
     padding: 10px 10px;
     color: white;
+
+
+}
+
+.l-logo {
+    display: none;
 
 }
 
@@ -55,13 +65,10 @@ main {
     margin: 5px 0;
 }
 
-.sidebar img {
+.s-img {
     width: 30px;
 }
 
-.spotify span {
-    display: none;
-}
 
 .playlist {
     margin-top: 15px;
@@ -79,19 +86,11 @@ main {
     font-size: 3rem;
     gap: 10px;
     color: #7B7E82;
+
 }
 
 .sidebar-bot h6 {
     display: none;
-}
-
-.fa-circle-down {
-    font-size: 12px;
-    margin-bottom: 20px;
-}
-
-.fa-circle-user {
-    font-size: 1.5rem;
 }
 
 .sidebar-bot li {
@@ -102,6 +101,19 @@ main {
     display: none;
 }
 
+.sidebar-bot {
+    padding-bottom: 10px;
+}
+
+.download {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.user-profile {
+    text-align: center;
+}
 
 /*MAIN*/
 .big-content {
@@ -110,6 +122,7 @@ main {
     flex-grow: 1;
     background-color: #141922;
 }
+
 
 
 /*MAIN HEADER*/
@@ -142,6 +155,10 @@ main {
     color: white;
 
 
+}
+
+.content-body a {
+    color: #7D7F84;
 }
 
 .content-body .row {
@@ -182,6 +199,28 @@ main {
     flex-basis: calc(100% /2 - 10px);
 }
 
+figure {
+    position: relative;
+}
+
+.play {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(12, 15, 20, 0.5);
+
+}
+
+.row figure:hover .play {
+    display: flex;
+}
+
 h2 {
     margin-bottom: 20px;
     margin-top: 30px;
@@ -203,6 +242,7 @@ h6 {
 .suggestions .row {
     margin-top: 20px;
 }
+
 
 
 /*FOOTER*/
@@ -253,9 +293,8 @@ footer {
     align-items: center;
 }
 
-.fa-circle-play {
-    font-size: 2rem;
-}
+
+
 
 .progress-bar {
     width: 120px;
@@ -315,8 +354,7 @@ footer {
     color: #7D7F84;
 }
 
-
-
+/*MIN-WIDTH 650px*/
 @media screen and (min-width:650px) {
     .sidebar {
         flex-basis: 225px;
@@ -324,18 +362,16 @@ footer {
         padding-bottom: 0;
     }
 
-    .spotify img {
-        width: 40px;
+    .logo-small {
+        display: none;
     }
 
-    .spotify span {
-        display: inline;
-        font-size: 1.5rem;
-        font-weight: bold;
-        color: white;
+    .l-logo {
+        display: block;
+        margin-bottom: 20px;
+
     }
 
-    .spotify,
     .home,
     .search,
     .bookshelf {
@@ -359,7 +395,6 @@ footer {
     .download {
         display: flex;
         gap: 20px;
-        text-align: center;
         border-bottom: 1px solid #7D7F84;
     }
 
@@ -385,6 +420,8 @@ footer {
 
 }
 
+
+/*MIN-WIDTH 850px*/
 @media screen and (min-width: 850px) {
     .col {
         flex-basis: calc(100% / 4 - 10px);
@@ -401,6 +438,7 @@ footer {
     }
 }
 
+/*MIN-WIDTH 1280px*/
 @media screen and (min-width:1280px) {
     .col {
         flex-basis: calc(100% / 6 - 10px);

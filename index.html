@@ -15,30 +15,26 @@
 </head>
 
 <body class="container">
-    <main>
+    <main> <!--SIDEBAR-->
         <div class="sidebar">
             <div class="sidebar-top">
                 <ul>
-
-                    <li>
-                        <div class="spotify"><img src="img/logo-small.svg" alt="logo Spotify"><span>Spotify</span></div>
-
+                    <li> <img class="s-img logo-small" src="img/logo-small.svg" alt="logo small Spotify"><img
+                            class="l-logo" src="img/logo.svg" alt="logo big spotify">
                     </li>
                     <li>
-                        <div class="home"><img src="img/home.svg" alt="img home">
+                        <div class="home s-img active"><img src="img/home.svg" alt="img home">
                             <h6>Home</h6>
                         </div>
                     </li>
-
-
                     <li>
-                        <div class="search"><img src="img/search.svg" alt="img search">
+                        <div class="search s-img"><img src="img/search.svg" alt="img search">
                             <h6>Cerca</h6>
                         </div>
                     </li>
 
                     <li>
-                        <div class="bookshelf"><img src="img/libreria.svg" alt="img bookshelf">
+                        <div class="bookshelf s-img"><img src="img/libreria.svg" alt="img bookshelf">
                             <h6>La tua libreria</h6>
                         </div>
 
@@ -81,12 +77,12 @@
                 <ul>
 
                     <li>
-                        <div class="download"><i class="fa-regular fa-circle-down"></i>
+                        <div class="download"><i class="fa-regular fa-circle-down fa-s"></i>
                             <h6>Installa app</h6>
                         </div>
                     </li>
                     <li>
-                        <div class="user-profile"><i class="fa-solid fa-circle-user"></i>
+                        <div class="user-profile"><i class="fa-solid fa-circle-user fa-xl"></i>
                             <h5>Riccardo Garbo</h5>
                         </div>
                     </li>
@@ -97,39 +93,59 @@
         <div class="big-content">
             <!--HEADER contenuto principale-->
             <div class="content-head">
-                <div class="upgrade-btn">
-                    EFFETTUA L'UPGRADE
-                </div>
+                <a href="#">
+                    <div class="upgrade-btn">
+
+                        EFFETTUA L'UPGRADE
+                    </div>
+                </a>
             </div>
             <!--BODY contenuto principale-->
             <div class="content-body">
                 <ul>
-                    <li>IN EVIDENZA</li>
-                    <li>PODCAST</li>
-                    <li>CLASSIFICHE</li>
-                    <li>GENERI E MOOD</li>
-                    <li>NUOVE USCITE</li>
-                    <li>SCOPRI</li>
+
+                    <li><a href="#">N EVIDENZA</a></li>
+
+                    <a href="#">
+                        <li><a href="#">PODCAST
+                            </a></li>
+                        <li><a href="#">CLASSIFICHE
+                            </a></li>
+                        <li><a href="#">GENERI E MOOD
+                            </a></li>
+                        <li><a href="#">NUOVE USCITE
+                            </a></li>
+                        <li><a href="#">SCOPRI
+                            </a></li>
                 </ul>
                 <h2>Recently played</h2>
                 <div class="row">
                     <div class="col">
                         <div class="card">
-                            <img src="img/metal_lifting.jpg" alt="">
+                            <figure>
+                                <img src="img/metal_lifting.jpg" alt="">
+                                <div class="play"><i class="fa-regular fa-circle-play fa-6x"></i></div>
+                            </figure>
                             <h3>Heavy Metal</h3>
                             <h6>Subtitle</h6>
                         </div>
                     </div>
                     <div class="col">
                         <div class="card">
-                            <img src="img/stranger.jpeg" alt="">
+                            <figure>
+                                <img src="img/stranger.jpeg" alt="">
+                                <div class="play"><i class="fa-regular fa-circle-play fa-6x"></i></div>
+                            </figure>
                             <h3>Stranger Things, Vo.1 (a Netflix Original Series Soundtrack)</h3>
                             <h6>Kyle Dixon & Michael Stein</h6>
                         </div>
                     </div>
                     <div class="col">
                         <div class="card">
-                            <img src="img/aquietplace.jpeg" alt="">
+                            <figure>
+                                <img src="img/aquietplace.jpeg" alt="">
+                                <div class="play"><i class="fa-regular fa-circle-play fa-6x"></i></div>
+                            </figure>
                             <h3>A quiet place </h3>
                             <h6>Subtitle</h6>
 
@@ -137,21 +153,30 @@
                     </div>
                     <div class="col">
                         <div class="card">
-                            <img src="img/split.jpeg" alt="">
+                            <figure>
+                                <img src="img/split.jpeg" alt="">
+                                <div class="play"><i class="fa-regular fa-circle-play fa-6x"></i></div>
+                            </figure>
                             <h3>Split</h3>
                             <h6>Subtitle</h6>
                         </div>
                     </div>
                     <div class="col">
                         <div class="card">
-                            <img src="img/cure.jpeg" alt="">
+                            <figure>
+                                <img src="img/cure.jpeg" alt="">
+                                <div class="play"><i class="fa-regular fa-circle-play fa-6x"></i></div>
+                            </figure>
                             <h3>A cure for wellness </h3>
                             <h6>Subtitle</h6>
                         </div>
                     </div>
                     <div class="col">
                         <div class="card">
-                            <img src="img/sinister.jpeg" alt="">
+                            <figure>
+                                <img src="img/sinister.jpeg" alt="">
+                                <div class="play"><i class="fa-regular fa-circle-play fa-6x"></i></div>
+                            </figure>
                             <h3>Sinister</h3>
                             <h6>Subtitle</h6>
                         </div>
@@ -174,7 +199,7 @@
                     </div>
                 </div>
                 <div class="most-popular">
-                    <h2>Creato per Riccardo Garbo</h2>
+                    <h2>Artisti più popolari</h2>
                     <h6>Più ascolti, più accurati saranno i suggerimenti </h6>
                     <div class="row">
                         <div class="col">
@@ -216,7 +241,7 @@
             <ul>
                 <li><i class="fa-solid fa-shuffle"></i></li>
                 <li><i class="fa-solid fa-backward-step"></i></li>
-                <li><i class="fa-regular fa-circle-play"></i></li>
+                <li><i class="fa-regular fa-circle-play fa-2x"></i></li>
                 <li><i class="fa-solid fa-forward-step"></i></li>
                 <li><i class="fa-solid fa-arrow-rotate-right"></i></li>
             </ul>
